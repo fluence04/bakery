@@ -1,0 +1,435 @@
+*,body{
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.nav
+{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Mingzat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color: white;
+    animation-name: headerImage;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+}
+
+.brandName
+{
+    position: absolute;
+    opacity: 0;
+    left:5%;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: .6rem;
+    animation-name: headerImage;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+}
+
+.headerImage
+{
+    opacity: 0;
+    position: relative;
+    height: 80vh;
+    background-color: blueviolet;
+    background-image: url("mainImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: headerImage;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-timing-function: linear forwards;
+    
+
+}
+
+.heroText
+{
+    color: Red;
+    position: absolute;
+    left:60%;
+    color: white;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 5rem;
+    
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    transition-duration: 500ms;
+}
+
+a:hover
+{
+    transform: scale(1.2);
+}
+
+.cafeDescription
+{
+    padding: 2rem;
+    height: max-content;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top:.2rem;
+    border-radius: 1rem;
+
+    
+    
+}
+
+.mainDescription
+{
+    font-size: 1.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.childDescription
+{
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ourCollection
+{
+    width:80vw;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    
+    
+    
+    
+
+}
+.collectionWrapper
+{
+   
+    margin-top: 1rem;
+    border-radius: .3rem;
+    border: .2rem dashed white;
+    
+    
+}
+
+.grid-item1
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 2rem;
+    transition-duration: 1s;
+}
+.grid-item2
+{
+    grid-column:2/3;
+    grid-row: 1/2;
+    margin-top: 2rem;
+    transition-duration: 1s;
+}
+.grid-item3
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 2rem;
+    transition-duration: 1s;
+   
+}
+.grid-item4
+{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    transition-duration: 1s;
+    
+}
+.grid-item5
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transition-duration: 1s;
+   
+}
+.grid-item6
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    transition-duration: 1s;
+   
+}
+.grid-item7
+{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    transition-duration: 1s;
+}
+.grid-item8
+{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    transition-duration: 1s;
+}
+
+.gridSize>img
+{
+    height:70%;
+    width:70%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border:.2rem solid brown;
+    
+        
+}
+
+.offeringHeading
+{
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    border:.2rem solid black;
+    border-radius: 1rem;
+}
+
+.offeringName{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    opacity: 0;
+    transition-duration: 1s;
+    border-left: .2rem solid brown;
+    padding:.2rem
+    
+
+
+}
+
+
+.price
+{
+    color: brown;
+    opacity: 0;
+    transition-duration: 1s;
+
+}
+
+
+.grid-item1:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item1:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item2:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item2:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item3:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item3:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item4:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item4:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item5:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item5:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item6:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item6:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item8:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item8:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.grid-item7:hover .price 
+{
+    
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.grid-item7:hover .offeringName
+{
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+.grid-item1:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item2:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item3:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item4:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item5:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item6:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item7:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+.grid-item8:hover
+{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+}
+
+.footer
+{
+    
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    background-color: rgb(19, 16, 11);
+    text-align: center;
+    border-radius: .5rem;
+    padding:.4rem;
+
+
+}
+
+.fa
+{
+    padding:2rem;
+    font-size: 2rem !important;
+    color:white !important;
+    
+    
+}
+@keyframes headerImage {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
